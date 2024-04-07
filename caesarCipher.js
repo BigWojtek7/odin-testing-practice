@@ -1,4 +1,4 @@
-const caesarCipher = function (word) {
+export default function caesarCipher(word) {
   const array = word.split("");
   const newArray = [];
   array.forEach((letter) => {
@@ -14,6 +14,4 @@ const caesarCipher = function (word) {
   });
 
   return String.fromCharCode(...newArray);
-};
-
-export default caesarCipher;
+}

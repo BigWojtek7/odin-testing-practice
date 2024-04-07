@@ -1,6 +1,7 @@
 import { capitalize, reverseString } from "./functions";
 import Calculator from "./calculator-class";
 import caesarCipher from "./caesarCipher";
+import analyzeArray from "./analyze-function";
 
 test("capitalize first character", () => {
   expect(capitalize("hello")).toEqual("Hello");
@@ -11,7 +12,6 @@ test("Reverse string", () => {
 });
 
 describe("calculator", () => {
-
   test("add two numbers", () => {
     expect(Calculator.add(5, 11)).toBe(16);
   });
@@ -41,8 +41,8 @@ describe("shift characters", () => {
   });
 });
 
-describe.skip("analyze array", () => {
-  // const object = analyzeArray([1, 8, 3, 4, 2, 6]);
+describe("analyze array", () => {
+  const object = analyzeArray([1, 8, 3, 4, 2, 6]);
 
   test("average value", () => {
     expect(object.average).toBe(4);
