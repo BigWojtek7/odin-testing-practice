@@ -1,5 +1,6 @@
 import { capitalize, reverseString } from "./functions";
 import Calculator from "./calculator-class";
+import caesarCipher from "./caesarCipher";
 
 test("capitalize first character", () => {
   expect(capitalize("hello")).toEqual("Hello");
@@ -25,7 +26,7 @@ describe("calculator", () => {
   });
 });
 
-describe.skip("shift characters", () => {
+describe("shift characters", () => {
   test("base test", () => {
     expect(caesarCipher("john")).toEqual("mrkq");
   });
